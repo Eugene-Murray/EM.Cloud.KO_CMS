@@ -4,17 +4,15 @@ define(['plugins/datacontext'], function(datacontext)
 {
 	var home = function() {
 		var self = this;
+		
 
 		self.activate = function() {
 
-			var teams = [];
-			$.each(datacontext.teams, function(key, team) {
-				teams.push(new App.Team(team.key, team.name, false));
-			});
-			self.teamList(teams);
+		    self.teamList(datacontext.teams());
 			self.teamList()[0].active(true);
 		};
 		
+		self.teamList = ko.observableArray([]);
 		self.displayName = 'KO CMS';
 		self.description = 'Durandal is a cross-device, cross-platform client framework written in JavaScript and designed to make Single Page Applications (SPAs) easy to create and maintain.';
 
@@ -42,9 +40,8 @@ define(['plugins/datacontext'], function(datacontext)
 			});
 		});
 
-		self.teamList = ko.observableArray();
-
-		self.selectedTeam = ko.observable(self.teamList()[0]);
+		self.selectedTeam = ko.observable();
+		
 
 		self.selectedTeam.subscribe(function(data)
 		{

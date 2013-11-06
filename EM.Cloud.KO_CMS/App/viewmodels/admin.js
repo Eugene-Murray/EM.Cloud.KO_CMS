@@ -7,7 +7,7 @@
     return {
     	displayName: 'Admin',
     	selectedTeam: ko.observable(),
-    	teamList: ko.observableArray(datacontext.teams)
+    	teamList: datacontext.teams()
        
     };
 });

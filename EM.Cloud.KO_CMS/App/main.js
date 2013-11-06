@@ -12,7 +12,7 @@ requirejs.config({
 define('jquery', function() { return jQuery; });
 define('knockout', ko);
 
-define(['durandal/system', 'durandal/app', 'durandal/viewLocator'],  function (system, app, viewLocator) {
+define(['plugins/datacontext', 'durandal/system', 'durandal/app', 'durandal/viewLocator'], function (datacontext, system, app, viewLocator) {
     //>>excludeStart("build", true);
     system.debug(true);
     //>>excludeEnd("build");
@@ -26,6 +26,9 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator'],  function (s
     });
 
     app.start().then(function() {
+
+        datacontext.getData();
+
         //Replace 'viewmodels' in the moduleId with 'views' to locate the view.
         //Look for partial views in a 'views' folder in the root.
         viewLocator.useConvention();
