@@ -1,4 +1,6 @@
-﻿requirejs.config({
+﻿var App = window.App = window.App || {};
+
+requirejs.config({
     paths: {
         'text': '../Scripts/text',
         'durandal': '../Scripts/durandal',

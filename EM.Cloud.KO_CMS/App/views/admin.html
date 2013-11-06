@@ -1,4 +1,23 @@
 ﻿<section>
     <h2 data-bind="html: displayName"></h2>
     
+    <div class="row-fluid">
+        <div class="span6">
+            <p>Select a Team</p>
+            <p><select data-bind="options: teamList, optionsText: 'name', optionsValue: 'key', value: selectedTeam" size="5"></select></p>
+        </div>
+     </div>
+    
+    <div class="row-fluid">
+            <div class="span6">
+                Menu Items  
+            </div>
+     </div>
+          
+    <div class="row-fluid">
+        <div class="span6">
+            Sections
+        </div>
+     </div>
+        
 </section>

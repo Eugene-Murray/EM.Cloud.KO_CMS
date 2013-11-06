@@ -141,12 +141,20 @@
   <ItemGroup>
     <Content Include="App\main.js" />
     <Content Include="App\viewmodels\admin.js" />
-    <Content Include="App\viewmodels\flickr.js" />
+    <Content Include="App\viewmodels\flickr2.js" />
+    <Content Include="App\viewmodels\dataViz.js" />
+    <Content Include="App\viewmodels\dragDrop.js" />
+    <Content Include="App\viewmodels\flickr1.js" />
+    <Content Include="App\viewmodels\jsPlumb.js" />
+    <Content Include="App\viewmodels\Models\team.js" />
+    <Content Include="App\viewmodels\Models\view.js" />
     <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\viewmodels\home.js" />
+    <Content Include="App\viewmodels\webSockets.js" />
     <Content Include="App\views\admin.html" />
+    <Content Include="App\views\flickr2.html" />
     <Content Include="App\views\detail.html" />
-    <Content Include="App\views\flickr.html" />
+    <Content Include="App\views\flickr1.html" />
     <Content Include="App\views\shell.html" />
     <Content Include="App\views\home.html" />
     <Content Include="Content\bootstrap-responsive.css" />
@@ -232,6 +240,7 @@
     <Content Include="Scripts\durandal\binder.js" />
     <Content Include="Scripts\durandal\composition.js" />
     <Content Include="Scripts\durandal\events.js" />
+    <Content Include="Scripts\durandal\plugins\datacontext.js" />
     <Content Include="Scripts\durandal\plugins\dialog.js" />
     <Content Include="Scripts\durandal\plugins\history.js" />
     <Content Include="Scripts\durandal\plugins\http.js" />

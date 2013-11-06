@@ -7,6 +7,11 @@ namespace EM.Cloud.KO_CMS {
       bundles.IgnoreList.Clear();
       AddDefaultIgnorePatterns(bundles.IgnoreList);
 
+      bundles.Add(new ScriptBundle("~/App/Models").Include(
+              "~/App/viewmodels/Models/view.js",
+              "~/App/viewmodels/Models/team.js"
+              ));
+
 	  bundles.Add(
 		new ScriptBundle("~/Scripts/vendor")
 			.Include("~/Scripts/jquery-{version}.js")
