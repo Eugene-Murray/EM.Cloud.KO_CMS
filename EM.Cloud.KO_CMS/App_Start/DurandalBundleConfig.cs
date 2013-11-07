@@ -8,7 +8,7 @@ namespace EM.Cloud.KO_CMS {
       AddDefaultIgnorePatterns(bundles.IgnoreList);
 
       bundles.Add(new ScriptBundle("~/App/Models").Include(
-              "~/App/viewmodels/Models/view.js",
+              "~/App/viewmodels/Models/menuitem.js",
               "~/App/viewmodels/Models/team.js"
               ));
 

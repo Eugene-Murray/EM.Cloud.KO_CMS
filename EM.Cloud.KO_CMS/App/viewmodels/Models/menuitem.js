@@ -1,6 +1,6 @@
 ﻿var App = window.App = window.App || {};
 
-App.View = function(title, templateName, data, active)
+App.MenuItem = function(title, templateName, data, active)
 {
 	this.title = title;
 	this.templateName = templateName;

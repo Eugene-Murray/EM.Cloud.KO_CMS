@@ -5,9 +5,25 @@
     //See the "welcome" module for an example of function export.
 
     return {
+
+    	activate: function() {
+    		this.syncDataContext();
+    	},
+
     	displayName: 'Admin',
-    	selectedTeam: ko.observable(),
-    	teamList: datacontext.teams()
-       
-    };
+	    selectedTeam: ko.observable(),
+	    teamTitle: '',
+	    teamList: ko.observableArray(),
+
+	    click_AddTeam: function()
+	    {
+		    datacontext.teams.push(new App.Team((datacontext.teams().length + 1), this.teamTitle, false));
+		    this.syncDataContext();
+	    },
+    	
+	    syncDataContext : function() {
+	    	this.teamList(datacontext.teams());
+	    }
+
+	};
 });

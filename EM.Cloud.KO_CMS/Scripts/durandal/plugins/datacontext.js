@@ -5,6 +5,7 @@ define(['plugins/http', 'durandal/app', 'knockout'], function (http, app, ko) {
     var datacontext = new function () {
         var self = this;
         self.teams = ko.observableArray();
+        self.menuItems = ko.observableArray();
 
         self.saveData = function () {
             console.log('saveData()');
