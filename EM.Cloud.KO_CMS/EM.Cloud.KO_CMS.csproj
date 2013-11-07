@@ -148,6 +148,7 @@
     <Content Include="App\viewmodels\jsPlumb.js" />
     <Content Include="App\viewmodels\Models\team.js" />
     <Content Include="App\viewmodels\Models\menuitem.js" />
+    <Content Include="App\viewmodels\Models\teammenuitem.js" />
     <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\viewmodels\home.js" />
     <Content Include="App\viewmodels\webSockets.js" />

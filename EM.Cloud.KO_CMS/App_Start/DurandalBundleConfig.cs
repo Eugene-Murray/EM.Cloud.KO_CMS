@@ -9,7 +9,8 @@ namespace EM.Cloud.KO_CMS {
 
       bundles.Add(new ScriptBundle("~/App/Models").Include(
               "~/App/viewmodels/Models/menuitem.js",
-              "~/App/viewmodels/Models/team.js"
+              "~/App/viewmodels/Models/team.js",
+              "~/App/viewmodels/Models/teammenuitem.js"
               ));
 
 	  bundles.Add(

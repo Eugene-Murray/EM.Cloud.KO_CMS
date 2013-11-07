@@ -1,9 +1,7 @@
 ﻿var App = window.App = window.App || {};
 
-App.MenuItem = function(title, templateName, data, active)
-{
+App.MenuItem = function(id, title, active) {
+	this.id = id;
 	this.title = title;
-	this.templateName = templateName;
-	this.data = data;
 	this.active = ko.observable(active);
 };
