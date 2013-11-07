@@ -253,6 +253,10 @@
     <Content Include="Scripts\durandal\transitions\entrance.js" />
     <Content Include="Scripts\durandal\viewEngine.js" />
     <Content Include="Scripts\durandal\viewLocator.js" />
+    <Content Include="Scripts\underscore-ko-1.2.2.js" />
+    <Content Include="Scripts\underscore-ko-1.2.2.min.js" />
+    <Content Include="Scripts\underscore.js" />
+    <Content Include="Scripts\underscore.min.js" />
     <Content Include="weyland-config.js" />
     <Content Include="readme.md" />
     <None Include="Scripts\amplify-vsdoc.js" />

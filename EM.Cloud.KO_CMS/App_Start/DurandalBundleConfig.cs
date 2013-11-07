@@ -16,8 +16,10 @@ namespace EM.Cloud.KO_CMS {
 	  bundles.Add(
 		new ScriptBundle("~/Scripts/vendor")
 			.Include("~/Scripts/jquery-{version}.js")
-			.Include("~/Scripts/bootstrap.js")
 			.Include("~/Scripts/knockout-{version}.js")
+            .Include("~/Scripts/bootstrap.js",
+            "~/Scripts/underscore.js",
+            "~/Scripts/underscore-ko-1.2.2.js")
 		);
 
       bundles.Add(
