@@ -22,12 +22,23 @@
 
     <div class="row-fluid">
         <div class="span3">
-            <ul class="nav nav-tabs nav-stacked nav nav-pills nav-stacked" data-bind="foreach: menuItemList">
+<!--            <ul class="nav nav-tabs nav-stacked nav nav-pills nav-stacked" data-bind="foreach: menuItemList">
                 <li data-bind="css: { active: $data.active }">
                     <a href="#" data-bind="text: $data.title, click: $root.selectedMenuItem"></a>
                 </li>
                 
             </ul>
+            
+            <hr />-->
+            
+           
+            <ul class="nav nav-tabs nav-stacked nav nav-pills nav-stacked" data-bind="foreach: menuItemListFiltered">
+                <li>
+                    <a href="#" data-bind="text: $data.menuTitle"></a>
+                </li>
+                
+            </ul>
+
         </div>
         
         <div class="span9">

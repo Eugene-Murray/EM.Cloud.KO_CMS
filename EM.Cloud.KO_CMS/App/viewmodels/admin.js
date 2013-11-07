@@ -8,6 +8,14 @@
 
     	activate: function() {
     		this.syncDataContext();
+    		this.teamSectionList.push(new App.TeamSectionItem(1, "Section 1", "Energy", "sectionUrl", true));
+    		this.teamSectionList.push(new App.TeamSectionItem(2, "Section 2", "Energy", "sectionUrl", true));
+    		this.teamSectionList.push(new App.TeamSectionItem(3, "Section 3", "Energy", "sectionUrl", true));
+    		this.teamSectionList.push(new App.TeamSectionItem(4, "Section 4", "Energy", "sectionUrl", true));
+    		this.teamSectionList.push(new App.TeamSectionItem(5, "Section 1", "PV", "sectionUrl", true));
+    		this.teamSectionList.push(new App.TeamSectionItem(6, "Section 2", "PV", "sectionUrl", true));
+    		this.teamSectionList.push(new App.TeamSectionItem(7, "Section 3", "PV", "sectionUrl", true));
+    		this.teamSectionList.push(new App.TeamSectionItem(8, "Section 4", "PV", "sectionUrl", true));
     	},
 
     	displayName: 'Admin',
@@ -15,6 +23,7 @@
 	    teamTitle: '',
 	    teamList: ko.observableArray(),
 	    teamMenuList: ko.observableArray(),
+	    teamSectionList: ko.observableArray(),
 
 	    click_AddTeam: function()
 	    {

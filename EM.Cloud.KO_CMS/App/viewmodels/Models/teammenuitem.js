@@ -5,5 +5,5 @@ App.TeamMenuItem = function(id, menuTitle, teamTitle, use)
 	this.id = id;
 	this.menuTitle = menuTitle;
 	this.teamTitle = teamTitle;
-	this.use = ko.observable(use);
+	this.use = use;
 };

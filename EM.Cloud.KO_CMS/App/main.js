@@ -11,6 +11,7 @@ requirejs.config({
 
 define('jquery', function() { return jQuery; });
 define('knockout', ko);
+define('underscore', function() { return _; });
 
 define(['plugins/datacontext', 'durandal/system', 'durandal/app', 'durandal/viewLocator'], function (datacontext, system, app, viewLocator) {
     //>>excludeStart("build", true);

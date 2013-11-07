@@ -62,9 +62,49 @@
     </div>
           
     <div class="row-fluid">
-        <div class="span6">
-            Sections
+        
+        <div class="span2">
+            
         </div>
-     </div>
+
+        <div class="span8">
+            <table class="table table-condensed table-striped table-bordered table-hover dataTables_paginate">
+                <caption>Sections</caption>
+                <thead>
+                    <tr>
+                        <th>Section Id</th>
+                        <th>Section Title</th>
+                        <th>Team Title</th>
+                        <th>Section Url</th>
+                        <th>Use?</th>
+                    </tr>
+                </thead>
+                <tbody data-bind="template: { foreach: teamSectionList }">
+            
+                    <tr >
+                        <td>
+                            <span data-bind="text: $data.id" ></span>
+                        </td>
+                        <td>
+                            <span data-bind="text: $data.sectionTitle" ></span>
+                        </td>
+                         <td>
+                            <span data-bind="text: $data.teamTitle" ></span>
+                         </td>   
+                        <td>
+                            <span data-bind="text: $data.sectionUrl" ></span>
+                        </td>                                  
+                        <td>
+                            <input type="checkbox" data-bind="checked: $data.use" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="span2">
+            
+            </div>
+        </div>
+    </div>
         
 </section>

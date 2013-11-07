@@ -1,6 +1,6 @@
 ﻿var App = window.App = window.App || {};
 
-define(['plugins/datacontext'], function(datacontext)
+define(['plugins/datacontext', 'knockout', 'underscore'], function(datacontext, ko, _)
 {
 	var home = function() {
 		var self = this;
@@ -10,10 +10,22 @@ define(['plugins/datacontext'], function(datacontext)
 			self.syncDataContext();
 			self.teamList()[0].active(true);
 		};
+
+		self.canDeactivate = function() {
+			$.each(datacontext.teams(), function(key, team) {
+				team.active(false);
+			});
+
+			return true;
+		};
 		
 		self.displayName = 'KO CMS';
 		self.description = 'Durandal is a cross-device, cross-platform client framework written in JavaScript and designed to make Single Page Applications (SPAs) easy to create and maintain.';
 
+		self.menuItemListFiltered = ko.observableArray([]);
+
+
+		
 		self.menuItemList = ko.observableArray([]);
 		self.selectedMenuItem = ko.observable(App.MenuItem("Web Sockets", "WebSockets.Template", null, true));
 		self.selectedMenuItem.subscribe(function(data)
@@ -46,11 +58,21 @@ define(['plugins/datacontext'], function(datacontext)
 					team.active(false);
 				}
 			});
+
+			self.setFilteredMenuList(data.title);
 		});
+
+		self.setFilteredMenuList = function(teamTitle) {
+			var teamMenuItemList = _.where(datacontext.teamMenuItems(), { teamTitle: teamTitle, use: true });
+			self.menuItemListFiltered(teamMenuItemList);
+		};
 		
 		self.syncDataContext = function() {
 			self.teamList(datacontext.teams());
 			self.menuItemList(datacontext.menuItems());
+			//self.menuItemListFiltered(self.teamMenuItems);
+			
+			self.setFilteredMenuList(datacontext.teamMenuItems()[0].teamTitle);
 		};
 
 		//this.features = [
