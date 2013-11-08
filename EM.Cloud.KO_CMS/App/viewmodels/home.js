@@ -78,7 +78,13 @@ define(['plugins/datacontext', 'knockout', 'underscore'], function(datacontext, 
 			self.showSection4(sectionList[3].use);
 			
 			if (sectionList[0].use) {
-				$('#section1').load(sectionList[0].sectionUrl);
+				//$('#section1').load(sectionList[0].sectionUrl);
+				
+				$.get(sectionList[0].sectionUrl, function(data) {
+					$(document).ready(function() {
+						$('#section1').html(data);
+					});
+				});
 			}
 
 			//var html;

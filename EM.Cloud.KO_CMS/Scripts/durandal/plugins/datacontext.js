@@ -40,8 +40,8 @@ define(['plugins/http', 'durandal/app', 'knockout'], function (http, app, ko) {
 	        self.teamSections.push(new App.TeamSectionItem(3, "Section 3", "Energy", "http://localhost:65336/App/views/_BarChart.html", true, true));
 	        self.teamSections.push(new App.TeamSectionItem(4, "Section 4", "Energy", "http://localhost:65336/App/views/_BarChart.html", true, true));
 
-	        self.teamSections.push(new App.TeamSectionItem(5, "Section 1", "PV", "http://localhost:65336/App/views/_BarChart.html", true, true));
-	        self.teamSections.push(new App.TeamSectionItem(6, "Section 2", "PV", "http://localhost:65336/App/views/_BarChart.html", true, true));
+	        self.teamSections.push(new App.TeamSectionItem(5, "Section 1", "PV", "http://localhost:65336/App/views/_PieChart.html", true, true));
+	        self.teamSections.push(new App.TeamSectionItem(6, "Section 2", "PV", "http://localhost:65336/App/views/_PieChart.html", true, true));
 	        self.teamSections.push(new App.TeamSectionItem(7, "Section 3", "PV", "http://localhost:65336/App/views/_PieChart.html", true, true));
 	        self.teamSections.push(new App.TeamSectionItem(8, "Section 4", "PV", "http://localhost:65336/App/views/_PieChart.html", true, true));
         };
