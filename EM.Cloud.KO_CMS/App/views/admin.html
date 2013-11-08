@@ -77,11 +77,11 @@
                         <th>Team Title</th>
                         <th>Section Url</th>
                         <th>Use?</th>
+                        <th>Read Only?</th>
                     </tr>
                 </thead>
                 <tbody data-bind="template: { foreach: teamSectionList }">
-            
-                    <tr >
+                    <tr>
                         <td>
                             <span data-bind="text: $data.id" ></span>
                         </td>
@@ -92,10 +92,13 @@
                             <span data-bind="text: $data.teamTitle" ></span>
                          </td>   
                         <td>
-                            <span data-bind="text: $data.sectionUrl" ></span>
+                            <input type="text" data-bind="value: $data.sectionUrl" />
                         </td>                                  
                         <td>
                             <input type="checkbox" data-bind="checked: $data.use" />
+                        </td>
+                        <td>
+                            <input type="checkbox" data-bind="checked: $data.readOnly" />
                         </td>
                     </tr>
                 </tbody>

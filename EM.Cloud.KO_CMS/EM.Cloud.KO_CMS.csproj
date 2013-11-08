@@ -153,7 +153,15 @@
     <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\viewmodels\home.js" />
     <Content Include="App\viewmodels\webSockets.js" />
+    <Content Include="App\viewmodels\_BarChart.js" />
+    <Content Include="App\viewmodels\_CurveChart.js" />
+    <Content Include="App\viewmodels\_PieChart.js" />
+    <Content Include="App\viewmodels\_RealTimeChart.js" />
     <Content Include="App\views\admin.html" />
+    <Content Include="App\views\_PieChart.html" />
+    <Content Include="App\views\_RealTimeChart.html" />
+    <Content Include="App\views\_CurveChart.html" />
+    <Content Include="App\views\_BarChart.html" />
     <Content Include="App\views\flickr2.html" />
     <Content Include="App\views\detail.html" />
     <Content Include="App\views\flickr1.html" />
