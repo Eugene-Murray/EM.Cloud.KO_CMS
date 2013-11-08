@@ -20,7 +20,9 @@ namespace EM.Cloud.KO_CMS {
 			.Include("~/Scripts/knockout-{version}.js")
             .Include("~/Scripts/bootstrap.js",
             "~/Scripts/underscore.js",
-            "~/Scripts/underscore-ko-1.2.2.js")
+            "~/Scripts/underscore-ko-1.2.2.js",
+            "~/Scripts/knockout.validation.debug.js",
+            "~/Scripts/toastr.js")
 		);
 
       bundles.Add(
