@@ -22,6 +22,12 @@
 			    datacontext.teamMenuItems.push(new App.TeamMenuItem((datacontext.teamMenuItems().length + 1), "Data Viz", this.teamTitle, true));
 			    datacontext.teamMenuItems.push(new App.TeamMenuItem((datacontext.teamMenuItems().length + 1), "Drag Drop", this.teamTitle, true));
 			    datacontext.teamMenuItems.push(new App.TeamMenuItem((datacontext.teamMenuItems().length + 1), "JS Plumb", this.teamTitle, true));
+		    
+			    //datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 1", "PV", "_PieChart", true, true, new App.TemplateData("PV Pie Chart")));
+			    //datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 2", "PV", "_CurveChart", true, true, new App.TemplateData("PV Curve Chart")));
+			    //datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 3", "PV", "_BarChart", true, true, new App.TemplateData("PV Bar Chart")));
+			    //datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 4", "PV", "_RealTimeChart", true, true, new App.TemplateData("PV Real Time")));
+	    
 
 			    this.syncDataContext();
 		    //} else {

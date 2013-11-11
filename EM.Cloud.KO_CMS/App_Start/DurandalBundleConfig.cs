@@ -11,7 +11,8 @@ namespace EM.Cloud.KO_CMS {
               "~/App/viewmodels/Models/menuitem.js",
               "~/App/viewmodels/Models/team.js",
               "~/App/viewmodels/Models/teammenuitem.js",
-              "~/App/viewmodels/Models/teamsectionitem.js"
+              "~/App/viewmodels/Models/teamsectionitem.js",
+              "~/App/viewmodels/Models/templateData.js"
               ));
 
 	  bundles.Add(
@@ -22,6 +23,9 @@ namespace EM.Cloud.KO_CMS {
             "~/Scripts/underscore.js",
             "~/Scripts/underscore-ko-1.2.2.js",
             "~/Scripts/knockout.validation.debug.js",
+            "~/Scripts/TrafficCop.js",
+            "~/Scripts/infuser.js",
+            "~/Scripts/koExternalTemplateEngine.js",
             "~/Scripts/toastr.js")
 		);
 

@@ -45,22 +45,26 @@
         
             <div class="row-fluid">
                 <div class="span12 well well-large" id="section1" style="color: red" data-bind="visible: showSection1">
-                    Section 1
+                    <!-- ko template: {name: templateSection1, data: sectionData1} -->
+                    <!-- /ko -->
                 </div>
             </div>
             
             <div class="row-fluid">
                 <div class="span12 well well-large" id="section2" style="color: blue" data-bind="visible: showSection2">
-                    Section 2
+                    <!-- ko template: {name: templateSection2, data: sectionData2} -->
+                    <!-- /ko -->
                 </div>
             </div>
         
                 <div class="row-fluid">
                     <div class="span6 well well-large" id="section3" style="color: green" data-bind="visible: showSection3">
-                        Section 3
+                        <!-- ko template: {name: templateSection3, data: sectionData3} -->
+                    <!-- /ko -->
                     </div>
                     <div class="span6 well well-large" id="section4" style="color: orange" data-bind="visible: showSection4">
-                        Section 4
+                        <!-- ko template: {name: templateSection4, data: sectionData4} -->
+                    <!-- /ko -->
                     </div>
                 </div>
 

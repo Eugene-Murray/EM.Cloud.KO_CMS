@@ -12,8 +12,12 @@ requirejs.config({
 define('jquery', function() { return jQuery; });
 define('knockout', ko);
 define('underscore', function() { return _; });
+define('infuser', infuser);
+//define('KoExternalTemplateEngine', function() { return koexternal; });
 
-define(['plugins/datacontext', 'durandal/system', 'durandal/app', 'durandal/viewLocator'], function (datacontext, system, app, viewLocator) {
+
+define(['plugins/datacontext', 'durandal/system', 'durandal/app', 'durandal/viewLocator', 'infuser'], function(datacontext, system, app, viewLocator, infuser)
+{
     //>>excludeStart("build", true);
     system.debug(true);
     //>>excludeEnd("build");
@@ -28,7 +32,10 @@ define(['plugins/datacontext', 'durandal/system', 'durandal/app', 'durandal/view
 
     app.start().then(function() {
 
-        datacontext.getData();
+    	infuser.defaults.templateSuffix = ".tmpl.html";
+    	infuser.defaults.templateUrl = "/Templates";
+
+    	datacontext.getData();
 
         //Replace 'viewmodels' in the moduleId with 'views' to locate the view.
         //Look for partial views in a 'views' folder in the root.

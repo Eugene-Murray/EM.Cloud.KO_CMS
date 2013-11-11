@@ -150,6 +150,7 @@
     <Content Include="App\viewmodels\Models\menuitem.js" />
     <Content Include="App\viewmodels\Models\teammenuitem.js" />
     <Content Include="App\viewmodels\Models\teamsectionitem.js" />
+    <Content Include="App\viewmodels\Models\templateData.js" />
     <Content Include="App\viewmodels\shell.js" />
     <Content Include="App\viewmodels\home.js" />
     <Content Include="App\viewmodels\webSockets.js" />
@@ -158,10 +159,12 @@
     <Content Include="App\viewmodels\_PieChart.js" />
     <Content Include="App\viewmodels\_RealTimeChart.js" />
     <Content Include="App\views\admin.html" />
-    <Content Include="App\views\_PieChart.html" />
-    <Content Include="App\views\_RealTimeChart.html" />
-    <Content Include="App\views\_CurveChart.html" />
-    <Content Include="App\views\_BarChart.html" />
+    <Content Include="Content\images\curvechart.png" />
+    <Content Include="Content\images\realchart.png" />
+    <Content Include="Templates\_PieChart.tmpl.html" />
+    <Content Include="Templates\_RealTimeChart.tmpl.html" />
+    <Content Include="Templates\_CurveChart.tmpl.html" />
+    <Content Include="Templates\_BarChart.tmpl.html" />
     <Content Include="App\views\flickr2.html" />
     <Content Include="App\views\detail.html" />
     <Content Include="App\views\flickr1.html" />
@@ -266,12 +269,30 @@
     <Content Include="Scripts\durandal\transitions\entrance.js" />
     <Content Include="Scripts\durandal\viewEngine.js" />
     <Content Include="Scripts\durandal\viewLocator.js" />
+    <Content Include="Scripts\infuser-amd.js" />
+    <Content Include="Scripts\infuser-amd.min.gz.js" />
+    <Content Include="Scripts\infuser-amd.min.js" />
+    <Content Include="Scripts\infuser.js" />
+    <Content Include="Scripts\infuser.min.gz.js" />
+    <Content Include="Scripts\infuser.min.js" />
     <Content Include="Scripts\knockout-3.0.0.debug.js" />
     <Content Include="Scripts\knockout-3.0.0.js" />
     <Content Include="Scripts\knockout.validation.debug.js" />
     <Content Include="Scripts\knockout.validation.js" />
+    <Content Include="Scripts\koExternalTemplateEngine-amd.js" />
+    <Content Include="Scripts\koExternalTemplateEngine-amd.min.js" />
+    <Content Include="Scripts\koExternalTemplateEngine.js" />
+    <Content Include="Scripts\koExternalTemplateEngine.min.js" />
+    <Content Include="Scripts\koExternalTemplateEngine_all.js" />
+    <Content Include="Scripts\koExternalTemplateEngine_all.min.js" />
     <Content Include="Scripts\toastr.js" />
     <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Scripts\TrafficCop-amd.js" />
+    <Content Include="Scripts\TrafficCop-amd.min.gz.js" />
+    <Content Include="Scripts\TrafficCop-amd.min.js" />
+    <Content Include="Scripts\TrafficCop.js" />
+    <Content Include="Scripts\TrafficCop.min.gz.js" />
+    <Content Include="Scripts\TrafficCop.min.js" />
     <Content Include="Scripts\underscore-ko-1.2.2.js" />
     <Content Include="Scripts\underscore-ko-1.2.2.min.js" />
     <Content Include="Scripts\underscore.js" />
@@ -322,6 +343,9 @@
       <DependentUpon>underscore.js</DependentUpon>
     </Content>
     <Content Include="Scripts\toastr.min.js.map" />
+    <Content Include="Scripts\TrafficCop-amd.min.js.map">
+      <DependentUpon>TrafficCop-amd.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
