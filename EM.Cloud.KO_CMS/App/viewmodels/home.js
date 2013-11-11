@@ -89,25 +89,25 @@ define(['plugins/datacontext', 'knockout', 'underscore', 'trafficCop', 'infuser'
 			
 			if (sectionList[0].use) {
 				//$('#section1').load(sectionList[0].sectionUrl);
-				self.templateSection1(sectionList[0].sectionUrl);
+				self.templateSection1(sectionList[0].sectionUrl());
 				self.sectionData1(sectionList[0].templateData);
 			}
 			
 			if (sectionList[1].use)
 			{
-				self.templateSection2(sectionList[1].sectionUrl);
+				self.templateSection2(sectionList[1].sectionUrl());
 				self.sectionData2(sectionList[1].templateData);
 			}
 			
 			if (sectionList[2].use)
 			{
-				self.templateSection3(sectionList[2].sectionUrl);
+				self.templateSection3(sectionList[2].sectionUrl());
 				self.sectionData3(sectionList[2].templateData);
 			}
 			
 			if (sectionList[3].use)
 			{
-				self.templateSection4(sectionList[3].sectionUrl);
+				self.templateSection4(sectionList[3].sectionUrl());
 				self.sectionData4(sectionList[3].templateData);
 			}
 

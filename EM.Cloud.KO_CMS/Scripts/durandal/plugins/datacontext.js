@@ -34,15 +34,15 @@ define(['plugins/http', 'durandal/app', 'knockout'], function (http, app, ko) {
 		    self.teamMenuItems.push(new App.TeamMenuItem(7, "Drag Drop", "PV", true));
 		    self.teamMenuItems.push(new App.TeamMenuItem(8, "JS Plumb", "PV", true));
 
-		    self.teamSections.push(new App.TeamSectionItem(1, "Section 1", "Energy", "_BarChart", true, true, new App.TemplateData("Energy Bar Chart")));
-		    self.teamSections.push(new App.TeamSectionItem(2, "Section 2", "Energy", "_CurveChart", true, true, new App.TemplateData("Energy Curve Chart")));
-		    self.teamSections.push(new App.TeamSectionItem(3, "Section 3", "Energy", "_PieChart", true, true, new App.TemplateData("Energy Pie Chart")));
-		    self.teamSections.push(new App.TeamSectionItem(4, "Section 4", "Energy", "_RealTimeChart", true, true, new App.TemplateData("Energy Real Time")));
+		    self.teamSections.push(new App.TeamSectionItem(1, "Section 1", "Energy", "BarChart", true, true, new App.TemplateData("Energy Bar Chart")));
+		    self.teamSections.push(new App.TeamSectionItem(2, "Section 2", "Energy", "CurveChart", true, true, new App.TemplateData("Energy Curve Chart")));
+		    self.teamSections.push(new App.TeamSectionItem(3, "Section 3", "Energy", "PieChart", true, true, new App.TemplateData("Energy Pie Chart")));
+		    self.teamSections.push(new App.TeamSectionItem(4, "Section 4", "Energy", "RealTimeChart", true, true, new App.TemplateData("Energy Real Time")));
 
-		    self.teamSections.push(new App.TeamSectionItem(5, "Section 1", "PV", "_PieChart", true, true, new App.TemplateData("PV Pie Chart")));
-		    self.teamSections.push(new App.TeamSectionItem(6, "Section 2", "PV", "_CurveChart", true, true, new App.TemplateData("PV Curve Chart")));
-		    self.teamSections.push(new App.TeamSectionItem(7, "Section 3", "PV", "_BarChart", true, true, new App.TemplateData("PV Bar Chart")));
-		    self.teamSections.push(new App.TeamSectionItem(8, "Section 4", "PV", "_RealTimeChart", true, true, new App.TemplateData("PV Real Time")));
+		    self.teamSections.push(new App.TeamSectionItem(5, "Section 1", "PV", "PieChart", true, true, new App.TemplateData("PV Pie Chart")));
+		    self.teamSections.push(new App.TeamSectionItem(6, "Section 2", "PV", "CurveChart", true, true, new App.TemplateData("PV Curve Chart")));
+		    self.teamSections.push(new App.TeamSectionItem(7, "Section 3", "PV", "BarChart", true, true, new App.TemplateData("PV Bar Chart")));
+		    self.teamSections.push(new App.TeamSectionItem(8, "Section 4", "PV", "RealTimeChart", true, true, new App.TemplateData("PV Real Time")));
 	    };
     };
 

@@ -5,8 +5,8 @@ App.TeamSectionItem = function(id, sectionTitle, teamTitle, sectionUrl, use, rea
 	this.id = id;
 	this.sectionTitle = sectionTitle;
 	this.teamTitle = teamTitle;
-	this.sectionUrl = sectionUrl;
+	this.sectionUrl = ko.observable(sectionUrl);
 	this.use = use;
 	this.readOnly = readOnly;
-	this.templateData = templateData;
+	this.templateData = ko.observable(templateData);
 };

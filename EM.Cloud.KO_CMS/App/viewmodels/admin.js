@@ -16,17 +16,17 @@
 	    click_AddTeam: function()
 	    {
 		    //if (this.errors().length == 0) {
-			    datacontext.teams.push(new App.Team((datacontext.teams().length + 1), this.teamTitle, false));
+			    datacontext.teams.push(new App.Team((datacontext.teams().length + 1), this.teamTitle(), false));
 
-			    datacontext.teamMenuItems.push(new App.TeamMenuItem((datacontext.teamMenuItems().length + 1), "Web Sockets", this.teamTitle, true));
-			    datacontext.teamMenuItems.push(new App.TeamMenuItem((datacontext.teamMenuItems().length + 1), "Data Viz", this.teamTitle, true));
-			    datacontext.teamMenuItems.push(new App.TeamMenuItem((datacontext.teamMenuItems().length + 1), "Drag Drop", this.teamTitle, true));
-			    datacontext.teamMenuItems.push(new App.TeamMenuItem((datacontext.teamMenuItems().length + 1), "JS Plumb", this.teamTitle, true));
+			    datacontext.teamMenuItems.push(new App.TeamMenuItem((datacontext.teamMenuItems().length + 1), "Web Sockets", this.teamTitle(), true));
+			    datacontext.teamMenuItems.push(new App.TeamMenuItem((datacontext.teamMenuItems().length + 1), "Data Viz", this.teamTitle(), true));
+			    datacontext.teamMenuItems.push(new App.TeamMenuItem((datacontext.teamMenuItems().length + 1), "Drag Drop", this.teamTitle(), true));
+			    datacontext.teamMenuItems.push(new App.TeamMenuItem((datacontext.teamMenuItems().length + 1), "JS Plumb", this.teamTitle(), true));
 		    
-			    //datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 1", "PV", "_PieChart", true, true, new App.TemplateData("PV Pie Chart")));
-			    //datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 2", "PV", "_CurveChart", true, true, new App.TemplateData("PV Curve Chart")));
-			    //datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 3", "PV", "_BarChart", true, true, new App.TemplateData("PV Bar Chart")));
-			    //datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 4", "PV", "_RealTimeChart", true, true, new App.TemplateData("PV Real Time")));
+			    datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 1", this.teamTitle(), "PieChart", true, true, new App.TemplateData(this.teamTitle() + " Pie Chart")));
+			    datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 2", this.teamTitle(), "CurveChart", true, true, new App.TemplateData(this.teamTitle() + " Curve Chart")));
+			    datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 3", this.teamTitle(), "BarChart", true, true, new App.TemplateData(this.teamTitle() + " Bar Chart")));
+			    datacontext.teamSections.push(new App.TeamSectionItem((datacontext.teamSections().length + 1), "Section 4", this.teamTitle(), "RealTimeChart", true, true, new App.TemplateData(this.teamTitle() + " Real Time")));
 	    
 
 			    this.syncDataContext();

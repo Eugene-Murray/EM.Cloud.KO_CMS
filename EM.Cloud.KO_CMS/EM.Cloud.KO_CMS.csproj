@@ -161,10 +161,10 @@
     <Content Include="App\views\admin.html" />
     <Content Include="Content\images\curvechart.png" />
     <Content Include="Content\images\realchart.png" />
-    <Content Include="Templates\_PieChart.tmpl.html" />
-    <Content Include="Templates\_RealTimeChart.tmpl.html" />
-    <Content Include="Templates\_CurveChart.tmpl.html" />
-    <Content Include="Templates\_BarChart.tmpl.html" />
+    <Content Include="Templates\PieChart.tmpl.html" />
+    <Content Include="Templates\RealTimeChart.tmpl.html" />
+    <Content Include="Templates\CurveChart.tmpl.html" />
+    <Content Include="Templates\BarChart.tmpl.html" />
     <Content Include="App\views\flickr2.html" />
     <Content Include="App\views\detail.html" />
     <Content Include="App\views\flickr1.html" />
