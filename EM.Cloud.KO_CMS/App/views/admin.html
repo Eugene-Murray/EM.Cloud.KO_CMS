@@ -75,7 +75,8 @@
                         <th>Section Id</th>
                         <th>Section Title</th>
                         <th>Team Title</th>
-                        <th>Section Url</th>
+                        <th>Section</th>
+                        <th>Section Data</th>
                         <th>Use?</th>
                         <th>Read Only?</th>
                     </tr>
@@ -93,7 +94,10 @@
                          </td>   
                         <td>
                             <input type="text" data-bind="value: $data.sectionUrl" />
-                        </td>                                  
+                        </td>   
+                        <td>
+                            <input type="text" data-bind="value: $data.templateData().name" />
+                        </td>                          
                         <td>
                             <input type="checkbox" data-bind="checked: $data.use" />
                         </td>
