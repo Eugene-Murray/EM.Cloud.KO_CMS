@@ -32,8 +32,8 @@ define(['plugins/datacontext', 'durandal/system', 'durandal/app', 'durandal/view
 
     app.start().then(function() {
 
-    	infuser.defaults.templateSuffix = ".tmpl.html";
-    	infuser.defaults.templateUrl = "/Templates";
+    	//infuser.defaults.templateSuffix = ".tmpl.html";
+    	//infuser.defaults.templateUrl = "/Templates";
 
     	datacontext.getData();
 

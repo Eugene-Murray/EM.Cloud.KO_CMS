@@ -3,7 +3,11 @@
 define(['plugins/datacontext', 'knockout', 'underscore', 'trafficCop', 'infuser'], function(datacontext, ko, _, trafficCop, infuser)
 //define(['plugins/datacontext', 'knockout', 'underscore'], function(datacontext, ko, _)
 {
-	var home = function() {
+	var home = function()
+	{
+		infuser.defaults.templateSuffix = ".tmpl.html";
+		infuser.defaults.templateUrl = "/Templates";
+
 		var self = this;
 		
 		self.activate = function() {

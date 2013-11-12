@@ -1,8 +1,14 @@
-﻿define(['plugins/datacontext', 'plugins/http', 'durandal/app', 'knockout'], function (datacontext, http, app, ko) {
+﻿define(['plugins/datacontext', 'plugins/http', 'durandal/app', 'knockout', 'infuser'], function(datacontext, http, app, ko, infuser)
+{
 
     return {
 
     	activate: function() {
+
+    		infuser.defaults.templateUrl = "/Templates/KnockoutTemplate?templateName=";
+    		infuser.defaults.templateSuffix = "";
+    		infuser.defaults.ajax.async = true;
+
     		this.syncDataContext();
     	},
 
@@ -12,6 +18,8 @@
 	    teamList: ko.observableArray(),
 	    teamMenuList: ko.observableArray(),
 	    teamSectionList: ko.observableArray(),
+	    mvcTemplateName: ko.observable('RazorTemplate'),
+	    mvcTemplateData: ko.observable({ templateData: 'Some Data for MVC RazorTemplate' }),
 
 	    click_AddTeam: function()
 	    {

@@ -18,6 +18,11 @@ namespace EM.Cloud.KO_CMS
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Durandal", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "KnockoutTemplates",
+                url: "{controller}/{action}/{templateName}",
+                defaults: new { contoller = "Templates", action = "KnockoutTemplate" });
         }
     }
 }
