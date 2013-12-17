@@ -10,9 +10,9 @@
         {
             router.map([
                 { route: '', title:'Home', moduleId: 'viewmodels/home', nav: true },
-                { route: 'Admin', moduleId: 'viewmodels/admin', nav: true }//,
-	            //{ route: 'Flickr - Ireland', moduleId: 'viewmodels/flickr1', nav: true },
-				//{ route: 'Flickr - Football', moduleId: 'viewmodels/flickr2', nav: true }
+                { route: 'Admin', moduleId: 'viewmodels/admin', nav: true },
+	            { route: 'Flickr - Ireland', moduleId: 'viewmodels/flickr1', nav: true },
+				{ route: 'Flickr - Football', moduleId: 'viewmodels/flickr2', nav: true }
             ]).buildNavigationModel();
             
             return router.activate();
